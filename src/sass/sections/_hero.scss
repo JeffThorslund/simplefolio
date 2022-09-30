@@ -26,11 +26,20 @@
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
+    align-items: flex-start;
   }
 
   .hero-flex {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
   }
 
   .hero-title {
@@ -68,6 +77,23 @@
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+  }
+
+  #hiking {
+    height: 450px;
+
+    @include respond(tab-land) {
+      height: 400px;
+    }
+    @include respond(tab-port) {
+      height: 360px;
+    }
+    @include respond(phone) {
+      height: 360px
+    }
+    @include respond(phone-xs) {
+      height: 280px
     }
   }
 }
