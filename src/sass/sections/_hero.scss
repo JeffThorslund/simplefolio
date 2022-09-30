@@ -28,6 +28,11 @@
     padding: 0rem $default-font-size;
   }
 
+  .hero-flex {
+    display: flex;
+    align-items: center;
+  }
+
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
